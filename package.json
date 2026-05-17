@@ -1,0 +1,19 @@
+{
+  "name": "cleanerupper-backend",
+  "version": "0.1.0",
+  "description": "Backend scaffold for CleanerUpper project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "painless-frontend-blen": "^1.0.0",
+    "painlesseasy": "^1.0.1"
+  }
+}

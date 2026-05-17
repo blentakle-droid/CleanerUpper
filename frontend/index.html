@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CleanerUpper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <logo>CleanerUpper</logo>
+        <h1>Welcome to CleanerUpper</h1>
+        <hr>
+    </header>
+    <main>
+        <p>CleanerUpper is an app designed to make cleaning easier.</p>
+        <p>Here are the steps to getting started:</p>
+        <hr>
+        <ol>
+            <li>Take a picture of your messy area/room</li>
+            <li>Upload the image by clicking the button below</li>
+            <li>Wait for the app to analyze the image</li>
+            <li>Recive clear and concrete steps to clean up the area</li>
+        </ol>
+        <hr>
+        <button id="uploadImage">Upload Image</button>
+        <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;" />
+        <div id="image"></div>
+        <div id="cleaningSteps"></div>
+    </main>
+    <script src="goodJavaScript.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
