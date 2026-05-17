@@ -31,7 +31,7 @@ cameraInput.addEventListener('change', (event) => {
 
         try {
             // Hit your painlesseasy backend route running on port 5000
-            const response = await fetch('http://cleaner-upper.vercel.app/api/analyze', {
+            const response = await fetch('https://cleanerupper.onrender.com/api/analyze', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ image: base64String })
