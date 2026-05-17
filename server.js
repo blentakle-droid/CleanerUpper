@@ -30,6 +30,11 @@ painless.link('/api/analyze', async (data, res) => {
             cleanBase64Data = matches[2]; 
         }
 
+        if (!matches) {
+        cleanBase64Data = rawBase64String.replace(/^data:image\/\w+;base64,/, "");
+        mimeType = "image/jpeg"; // Force tell Gemini it's a standard picture structure
+         }
+
         // Fire the prompt and image data to Gemini's native multimodal model
         const response = await ai.models.generateContent({
             model: 'gemini-2.5-flash',
